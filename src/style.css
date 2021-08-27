@@ -5,18 +5,21 @@ body {
 
 section {
   background-color: white;
-  border: solid black 1px;
+  
 }
 
 .main {
   background-color: #1c1d25;
   height: 100vh;
   color: white;
-  font-size: 40px;
+  font-size: 30px;
 }
 footer {
-  height: 500px;
   background-color: black ;
+  color: white;
+  text-align: center;
+  padding: 80px;
+  font-size: 30px;
 }
 
 nav {
@@ -32,22 +35,31 @@ ul {
   font-size: 30px;
 }
 
+ul.show {
+  display: block;
+}
+
 li {
   text-decoration: none;
 }
 
 h1 {
-  font-size: 90px;
+  font-size: 50px;
   margin: 0;
 }
 
 h2 {
-  font-size: 50px;
+  font-size: 30px;
 }
 
 p {
   margin:0;
-  font-size: 30px;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.subtext {
+  font-size: 15px;
   font-weight: 300;
 }
 
@@ -79,8 +91,8 @@ p {
   background-color: #ef744b;
 }
 .button:active {
-  background-color: #A9A9A9
-  color: #808080;
+  background-color: #A9A9A9;
+  color:  \#808080;
 }
 
 .socials {
@@ -102,16 +114,76 @@ p {
   padding: 80px;
 }
 .headshot {
-  width: 250px;
+  width: 200px;
   border-radius: 150px; 
 }
 
 .project-card {
-  width: 200px;
-  height: 500px;
-  border: 1px solid black;
+  width: 225px;
+  height: 350px;
+  box-shadow: 5px 5px 20px rgb(194, 192, 192);
+  margin: 10px;
+  
 }
 .project-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 15px;
+}
+
+.project-image {
+   margin-top: 25px;
+   height: 275px;
+   width: 200px;
+}
+
+@media only screen and (max-width: 1000px){
+  .project-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+hr {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.project-link {
+  text-decoration: none;
+  color: #ef744b
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.hamburger {
+  display: none;
+}
+
+@media only screen and (max-width: 1000px) {
+  .hamburger {
+    display: block;
+    border: 0;
+    background-color: transparent;
+    color: white;
+    font-size: 30px;
+    margin: 20px;
+    align-self: flex-end;
+  }
+  ul {
+    display:none;
+    background-color: #2b2c35;
+    margin: 0px;
+  }
+
+  nav {
+    align-items: flex-start;
+    background-color: #2b2c35;
+  }
+
+.Contact-Me {
   display: flex;
-  justify-content: space-around;
+  justify-content:center;
+}
 }
