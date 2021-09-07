@@ -94,7 +94,11 @@ p {
   background-color: #A9A9A9;
   color:  \#808080;
 }
-
+.logo {
+  height: 80px;
+  margin: 50px;
+  visibility: hidden;
+}
 .socials {
   padding-bottom: 200px;
 }
